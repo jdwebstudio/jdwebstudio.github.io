@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JD WebStudio</title>
+    <link rel="stylesheet" href="contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+<li class="logo">JD WebStudio</li>
+<li class="btn"><span class="fas fa-bars"></span></li>
+<div class="items">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="service.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</div>
+<li class="search-icon">
+          <input type="search" placeholder="Search">
+          <label class="icon">
+            <span class="fas fa-search"></span>
+          </label>
+        </li>
+</ul>
+</nav>
+    <div class="content">
+      <div class="text">
+JD WebStudio</div>
+<div class="p">
+</div>
+<main>
+  <br>
+  <br>
+  
+   <!-- contact section -->
+         <section id="contact-section">
+           <div class="container">
+             <h2>Contact Us</h2>
+              <p>Email us and keep upto date with our latest news</p>
+              <center>
+             <div class="contact-form">
+
+                  <!-- First grid -->
+               <div>
+                 <i class="fa fa-map-marker"></i><span class="form-info"> Sundarharaincha-3, Gachhiya</span><br>
+                 <i class="fa fa-phone" > </i><span class="form-info"> +9779807300976,<br>+9779842692300</span><br>
+                 <i class="fa fa-envelope"></i><span class="form-info"> webstudiojd@gmail.com</span>
+               </div>
+               
+                   <!-- second grid -->
+           <div>        
+             <form action="contact.php">
+              
+               <input type="text" placeholder="Full Name" required name="name" size="10">
+                  
+              
+               <input type="email" name="email" placeholder="Email" required> <br>
+                
+               <input type="text" placeholder="Contact Number" name="phone"><br>
+                  
+               <textarea name="comments" placeholder="Message" rows="10" required></textarea><br>
+               <input type="submit" value="Send Message">
+             </form>   
+               </div>
+             </div>
+           </center>
+           </div>
+         </section>
+       
+          </main>
+          <script>
+      $('nav ul li.btn span').click(function(){
+        $('nav ul div.items').toggleClass("show");
+        $('nav ul li.btn span').toggleClass("show");
+      });
+    </script>
+</div>
+
+
+  
+
+         
+  </body>
+</html>
